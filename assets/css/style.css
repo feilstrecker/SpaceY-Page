@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 858px;
+    width: 100%;
+    background-color: #040327;
+}
+
+.home-main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 2rem;
+}
+
+.home-title-container {
+    display: grid;
+    padding-left: 14%;
+    grid-template-rows: 4fr 0.7fr 3.5fr 2fr 1fr;
+}
+
+.spacey-logo {
+    width: 201px;
+    height: 31px;
+}
+
+.home-paragraph {
+    color: #F5D15F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.home-h1 {
+    width: 589px;
+    height: 148px;
+    text-align: left;
+    font: normal normal bold 56px/74px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.home-subtitle {
+    width: 662px;
+    height: 64px;
+    text-align: left;
+    font: normal normal normal 24px/32px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.home-subscribe-button {
+    background-color: #E85937;
+    border-radius: 6px;
+    width: 252px;
+    height: 48px;
+    border: none;
+    font: normal normal normal 24px/32px Roboto;
+    color: white;
+}
+
+.home-banner {
+    width: 474px;
+    height: 607px;
+    position: absolute;
+    right: 0;
+}
+
+.home-info-grid {
+    width: 100%;
+}
