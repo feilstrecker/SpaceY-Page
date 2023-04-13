@@ -5,22 +5,28 @@
 
 .home-section {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 858px;
+    height: 878px;
+    padding-bottom: 20px;
     width: 100%;
     background-color: #040327;
 }
 
 .home-main-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 0.6fr;
+    grid-template-rows: 600px;
     padding-top: 2rem;
 }
 
 .home-title-container {
+    z-index: 1;
     display: grid;
     padding-left: 14%;
-    grid-template-rows: 4fr 0.7fr 3.5fr 2fr 1fr;
+    gap: 0.2rem;
+}
+
+.subtitle-container {
+    height: 50px;
 }
 
 .spacey-logo {
@@ -29,11 +35,13 @@
 }
 
 .home-paragraph {
+    padding-top: 5rem;
     color: #F5D15F;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    align-self: end;
 }
 
 .home-h1 {
@@ -41,8 +49,8 @@
     height: 148px;
     text-align: left;
     font: normal normal bold 56px/74px Roboto;
-    letter-spacing: 0px;
     color: #FFFFFF;
+    align-self: center;
 }
 
 .home-subtitle {
@@ -50,7 +58,6 @@
     height: 64px;
     text-align: left;
     font: normal normal normal 24px/32px Roboto;
-    letter-spacing: 0px;
     color: #FFFFFF;
 }
 
@@ -65,6 +72,8 @@
 }
 
 .home-banner {
+    object-fit: cover;
+    z-index: 0;
     width: 474px;
     height: 607px;
     position: absolute;
@@ -73,4 +82,550 @@
 
 .home-info-grid {
     width: 100%;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-info-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+}
+
+.home-info-p {
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    color: #FFFFFF;
+    width: 198px;
+    height: 42px;
+}
+
+.about-section {
+    height: 1130px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.about-main-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.about-red-planet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-red-planet-img {
+    width: 683px;
+    height: 682px;
+}
+
+.about-red-planet-item:nth-child(2) {
+    height: 25rem;
+    padding-top: 8rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-subtitle {
+    width: 170px;
+    height: 21px;
+    text-align: left;
+    font: normal normal medium 16px/24px Roboto;
+    letter-spacing: 2.4px;
+    color: #F5D15F;
+    text-transform: uppercase;
+
+}
+
+.about-h3 {
+    text-align: left;
+    font: normal normal bold 40px/53px Roboto;
+    color: #FFFFFF;
+}
+
+.about-main-paragraph, .about-secondary-paragraph {
+    max-width: 534px;
+    text-align: left;
+    font: normal normal normal 16px/24px Roboto;
+    color: #FFFFFF;
+}
+
+.about-gallery-grid {
+    display: grid;
+    grid-template-columns: 40% 2% 1fr;
+}
+
+.gallery-title-item {
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 5rem;
+    padding: 4rem 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-paragraph {
+    font: normal normal bold 24px/32px Roboto;
+    color: #FF8C70;
+}
+
+.slider-button {
+    align-self: center;
+    transition: ease;
+    transition-duration: 1s;
+}
+
+.gallery-slider {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: hidden;
+    gap: 1rem;
+}
+
+.gallery-h3 {
+    text-align: left;
+    font: normal normal bold 40px/53px Roboto;
+    color: #FFFFFF;
+    width: 372px;
+    height: 159px;
+}
+
+.gallery-slider-img {
+    width: 345px;
+    height: 353px;
+    position:relative;
+    transition: ease;
+    right: 0;
+    transition-duration: 1s;
+}
+
+.form-section {
+    padding-top: 280px;
+    width: 100%;
+    height: 1000px;
+}
+
+.form-main-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-container {
+    border-radius: 15px;
+    width: 496px;
+    height: 817px;
+    background-color: #0E0D40;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 0.5fr 1fr;
+    margin: 0 auto;
+}
+
+.form-h4 {
+    width: 330px;
+    height: 86px;
+    text-align: left;
+    font: normal normal bold 32px/43px Roboto;
+    color: #FFFFFF;
+}
+
+.form-paragraph {
+    width: 240px;
+    height: 45px;
+    text-align: left;
+    font: normal normal normal 16px/24px Roboto;
+    color: #FFFFFF;
+}
+
+.contact-title {
+    display: grid;
+    grid-template-rows: 1.5fr 1.2fr 1.3fr;
+    align-items: center;
+}
+
+.contact-form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat;
+}
+
+.contact-form-label {
+    text-align: left;
+    font: normal normal bold 16px/24px Roboto;
+    color: #FFFFFF;
+}
+
+.contact-form-input {
+    width: 400px;
+    height: 50px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+#contact-form-submit {
+    width: 400px;
+    height: 50px;
+    text-align: left;
+    font: normal normal normal 16px/24px Roboto;
+    background-color: #E85937;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#contact-form-checkbox {
+    margin-right: 15px;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: grid;
+}
+
+#contact-form-checkbox-child {
+    margin: auto auto;
+    border-radius: 5px;
+    width: 23px;
+    height: 23px;
+    transition: ease;
+    transition-duration: 0.3s;
+}
+
+.checkbox-container {
+    width: 400px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+
+@media (max-width: 1150px) {
+    .home-banner {
+        width: 237px;
+        height: 303.5px;
+    }
+    .about-red-planet-img {
+        width: 341.5px;
+        height: 341.5px;
+    }
+    .about-red-planet-item {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-rocket-img {
+        width: 263px;
+        height: 490.5px;
+    }
+    .form-main-grid {
+        align-items: center;
+    }
+    .about-gallery-grid {
+        grid-template-columns: 30% 4% 1fr;
+    }
+    .gallery-title-item {
+        margin-left: 0;
+    }
+    .gallery-h3 {
+        width: 300px;
+    }
+    .gallery-paragraph {
+        margin-top: 3rem;
+    }
+    .form-section {
+        padding-top: 5rem;
+    }
+}
+@media (max-width: 1000px) {
+    .about-gallery-grid {
+        grid-template-columns: 250px 3% 1fr;
+    }
+    .spacey-logo {
+        width: 100.5px;
+        height: 15.5px;
+    }
+    .gallery-h3 {
+        width: 250px;
+        font-size: 30px;
+    }
+    .gallery-paragraph {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-gallery-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template: 
+            "title title"
+            "button slider"
+    }
+    .gallery-title-item {
+        grid-area: title;
+        padding-top: 10rem;
+    }
+    .gallery-slider {
+        grid-area: slider;
+    }
+    .slider-button {
+        grid-area: button;
+        width: 70px;
+    }
+    .gallery-h3 {
+        width: 100%;
+        height: 3rem;
+    }
+    .gallery-paragraph {
+        margin: 0 auto;
+    }
+    .gallery-slider {
+        margin-left: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .form-container {
+        width: 300px;
+        height: 700px;
+    }
+    .contact-title, .contact-form, .contact-form-input, .contact-form-label, .checkbox-container, #contact-form-submit {
+        width: 250px;
+    }
+    .contact-form-input {
+        height: 30px;
+    }
+    .form-h4 {
+        width: 250px;
+        font-size: 20px;
+    }
+    .about-section {
+        padding-top: 0;
+    }
+    .form-rocket-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .home-h1 {
+       font-size: 40px;
+       width: 450px;
+       height: 120px;
+       line-height: 4rem;
+    }
+    .subtitle-container, .home-subtitle {
+        font-size: 20px;
+        width: 500px;
+    }
+    .home-subscribe-button {
+        margin-top: 3rem;
+    }
+    .home-info-p {
+        text-align: center;
+    }
+    .home-info-icon {
+        margin: 0 auto;
+    }
+    .about-red-planet-grid {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    .about-red-planet-item:nth-child(2) {
+        padding-top: 0;
+    }
+    .gallery-h3 {
+        height: 80px;
+    }
+    .gallery-paragraph {
+        margin: 0 0;
+    }
+    .gallery-title-item {
+        padding-bottom: 2rem;
+    }
+    .slider-button {
+        width: 30px;
+    }
+    .form-main-grid {
+        padding-top: 450px;
+        height: auto;
+    }
+    .form-section {
+        height: 1300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-secondary-paragraph, .about-main-paragraph {
+        padding: 1rem;
+    }
+    .about-subtitle, .about-h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .slider-button {
+        display: none;
+    }
+    .about-gallery-grid {
+        grid-template: 
+            "title title"
+            "slider slider"
+    }
+    .gallery-slider {
+        overflow-x: scroll;
+    }
+    .home-info-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .home-info-p {
+        font-size: 13px;
+        width: 120px;
+    }
+    .home-h1 {
+        font-size: 30px;
+        width: 350px;
+    }
+    .subtitle-container {
+        width: 370px;
+        height: 80px;
+    }
+    .home-subtitle {
+        font-size: 15px;
+        width: 370px;
+        height: 100px;
+    }
+    .home-button {
+        width: 200px;
+    }
+    .home-subscribe-button {
+        width: 200px;
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .about-h3, .gallery-h3 {
+        font-size: 30px;
+    }
+    .about-main-paragraph, .about-secondary-paragraph {
+        font-size: 15px;
+    }
+    .gallery-paragraph {
+        font-size: 15px;
+    }
+    .form-main-grid {
+        grid-template-columns: auto;
+        grid-template: 
+            "rocket"
+            "form"
+        ;
+        height: 1200px;
+    }
+    .form-container {
+        grid-area: form;
+    }
+    .form-rocket-img {
+        grid-area: rocket;
+    }
+    .form-section {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 430px) {
+    .spacey-logo:nth-child(1) {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    .home-section {
+        height: 1200px;
+    }
+    .home-paragraph {
+        width: 100%;
+        text-align: center;
+    }
+    .home-h1 {
+        text-align: center;
+        width: 100vw;
+        height: 120px;
+        line-height: 3rem;
+    }
+    .gallery-h3 {
+        height: 150px;
+    }
+    .home-title-container {
+        margin-top: 14rem;
+        padding-left: 0%;
+        width: 100%;
+    }
+    .subtitle-container {
+        width: 100%;
+    }
+    .home-paragraph {
+        font-size: 10px;
+    }
+    .home-subtitle {
+        text-align: center;
+        width: 100%;
+        height: 120px;
+    }
+    .home-button {
+        margin-top: 1.5rem;
+        width: 100%;
+        display: grid;
+    }
+    .home-subscribe-button {
+        margin: 0 auto;
+    }
+    .home-info-grid {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 100vw;
+    }
+    .about-red-planet-item:nth-child(1){
+         height: 300px;
+    }
+    .about-red-planet-img {
+        height: 170.5px;
+        width: 170.5px;
+    }
+
+    .gallery-h3 {
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .gallery-paragraph {
+        text-align: center;
+    }
+    .gallery-slider-img {
+        height: 323px;
+        width: 325px;
+    }
+    .form-main-grid {
+        margin-top: 5rem;
+    }
+    .contact-form-label {
+        width: 200px;
+    }
+
 }
