@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+.button:hover, #contact-form-submit:hover {
+    background-color: white;
+    color: black;
+}
+.button {
+    cursor: pointer;
+    transition: ease;
+    transition-duration: 1s;
+}
+input {
+    color: white;
+    font-size: 1.5rem;
+}
+
 .home-section {
     display: grid;
     height: 878px;
@@ -38,7 +52,7 @@
     padding-top: 5rem;
     color: #F5D15F;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2.4px;
     text-transform: uppercase;
     align-self: end;
@@ -131,7 +145,6 @@
     display: grid;
     justify-content: center;
     align-items: center;
-
 }
 
 .about-subtitle {
@@ -142,7 +155,6 @@
     letter-spacing: 2.4px;
     color: #F5D15F;
     text-transform: uppercase;
-
 }
 
 .about-h3 {
@@ -151,7 +163,7 @@
     color: #FFFFFF;
 }
 
-.about-main-paragraph, .about-secondary-paragraph {
+.about-main-paragraph, .about-secondary-paragraph, .contact-form-label {
     max-width: 534px;
     text-align: left;
     font: normal normal normal 16px/24px Roboto;
@@ -186,7 +198,7 @@
 .gallery-slider {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     overflow-x: hidden;
     gap: 1rem;
 }
@@ -200,9 +212,7 @@
 }
 
 .gallery-slider-img {
-    width: 345px;
-    height: 353px;
-    position:relative;
+    position: relative;
     transition: ease;
     right: 0;
     transition-duration: 1s;
@@ -259,13 +269,6 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-rows: repeat;
-}
-
-.contact-form-label {
-    text-align: left;
-    font: normal normal bold 16px/24px Roboto;
-    color: #FFFFFF;
 }
 
 .contact-form-input {
@@ -314,6 +317,41 @@
     grid-template-columns: 0fr 1fr;
 }
 
+@media (min-width: 2500px) {
+    .about-gallery-grid {
+        grid-template-columns: initial;
+        height: 700px;
+    }
+    .extra-gallery-img, .slider-button {
+        display: none;
+    }
+    .gallery-slider {
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: initial;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .gallery-title-item {
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        margin-left: 0;
+    }
+    .gallery-title-item img {
+        margin: 0 auto;
+    }
+    .gallery-h3 {
+        width: 100%;
+        height: 3rem;
+    }
+    .form-section {
+        padding-top: 480px;
+    }
+    .about-red-planet-item {
+        justify-self: center;
+    }
+}
+
 @media (max-width: 1150px) {
     .home-banner {
         width: 237px;
@@ -339,7 +377,7 @@
         grid-template-columns: 30% 4% 1fr;
     }
     .gallery-title-item {
-        margin-left: 0;
+        margin-left: 3rem;
     }
     .gallery-h3 {
         width: 300px;
@@ -361,10 +399,10 @@
     }
     .gallery-h3 {
         width: 250px;
-        font-size: 30px;
+        font-size: 1.87rem;
     }
     .gallery-paragraph {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -411,7 +449,7 @@
     }
     .form-h4 {
         width: 250px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .about-section {
         padding-top: 0;
@@ -423,13 +461,13 @@
 
 @media (max-width: 760px) {
     .home-h1 {
-       font-size: 40px;
+       font-size: 2.5rem;
        width: 450px;
        height: 120px;
        line-height: 4rem;
     }
     .subtitle-container, .home-subtitle {
-        font-size: 20px;
+        font-size: 1.25rem;
         width: 500px;
     }
     .home-subscribe-button {
@@ -449,10 +487,10 @@
         padding-top: 0;
     }
     .gallery-h3 {
-        height: 80px;
+        height: 2rem;
     }
     .gallery-paragraph {
-        margin: 0 0;
+        margin: 0;
     }
     .gallery-title-item {
         padding-bottom: 2rem;
@@ -469,6 +507,15 @@
     }
 }
 
+@media (max-width: 718px) {
+    .gallery-h3 {
+        height: 5.5rem;
+    }
+    .gallery-title-item {
+        margin-left: 2rem;
+    }
+}
+
 @media (max-width: 600px) {
     .about-secondary-paragraph, .about-main-paragraph {
         padding: 1rem;
@@ -479,7 +526,6 @@
         line-height: 2.5rem;
         text-align: center;
     }
-
     .slider-button {
         display: none;
     }
@@ -496,11 +542,11 @@
         height: 30px;
     }
     .home-info-p {
-        font-size: 13px;
+        font-size: 0.81rem;
         width: 120px;
     }
     .home-h1 {
-        font-size: 30px;
+        font-size: 1.87rem;
         width: 350px;
     }
     .subtitle-container {
@@ -508,7 +554,7 @@
         height: 80px;
     }
     .home-subtitle {
-        font-size: 15px;
+        font-size: 0.93rem;
         width: 370px;
         height: 100px;
     }
@@ -517,17 +563,14 @@
     }
     .home-subscribe-button {
         width: 200px;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-top: 0;
     }
     .about-h3, .gallery-h3 {
-        font-size: 30px;
+        font-size: 1.87rem;
     }
-    .about-main-paragraph, .about-secondary-paragraph {
-        font-size: 15px;
-    }
-    .gallery-paragraph {
-        font-size: 15px;
+    .about-main-paragraph, .about-secondary-paragraph, .gallery-paragraph {
+        font-size: 0.93rem;
     }
     .form-main-grid {
         grid-template-columns: auto;
@@ -558,7 +601,6 @@
         height: 1200px;
     }
     .home-paragraph {
-        width: 100%;
         text-align: center;
     }
     .home-h1 {
@@ -573,22 +615,19 @@
     .home-title-container {
         margin-top: 14rem;
         padding-left: 0%;
-        width: 100%;
     }
-    .subtitle-container {
+    .subtitle-container, .home-title-container, .home-subtitle, .home-paragraph, .home-button {
         width: 100%;
     }
     .home-paragraph {
-        font-size: 10px;
+        font-size: 0.62rem;
     }
     .home-subtitle {
         text-align: center;
-        width: 100%;
         height: 120px;
     }
     .home-button {
         margin-top: 1.5rem;
-        width: 100%;
         display: grid;
     }
     .home-subscribe-button {
@@ -609,7 +648,9 @@
         height: 170.5px;
         width: 170.5px;
     }
-
+    .gallery-title-item {
+        margin-left: 0;
+    }
     .gallery-h3 {
         margin-top: 10rem;
         text-align: center;
